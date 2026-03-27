@@ -15,13 +15,13 @@ function QuickViewOffcanvas({ product }) {
   <div className="mini-quick-image">
     <div className="wrap-quick">
       <div className="image">
-        <img loading="lazy" width={340} height={444} src={currentProduct.img} alt={currentProduct.name} />
+        <img loading="lazy" src={currentProduct.img} alt={currentProduct.name} />
       </div>
       <div className="image">
-        <img loading="lazy" width={340} height={444} src={currentProduct.hover || currentProduct.img} alt={currentProduct.name} />
+        <img loading="lazy" src={currentProduct.hover || currentProduct.img} alt={currentProduct.name} />
       </div>
       <div className="image">
-        <img loading="lazy" width={340} height={444} src={currentProduct.img} alt={currentProduct.name} />
+        <img loading="lazy" src={currentProduct.img} alt={currentProduct.name} />
       </div>
     </div>
   </div>

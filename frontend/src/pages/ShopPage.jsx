@@ -13,27 +13,31 @@ function ShopPage() {
   return (
     <>
       {/* Page Title */}
-      <div className="page-title flat-spacing">
+      <div className="page-title" style={{
+        background: 'linear-gradient(135deg, #103C29 0%, #1a5c3f 100%)',
+        position: 'relative'
+      }}>
         <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="content-inner text-center">
-                <h1 className="page-title-heading fw-medium">
-                  {currentCategory ? currentCategory.name : 'All Products'}
-                </h1>
-                <nav className="breadcrumb-wrap" aria-label="breadcrumb">
-                  <ol className="breadcrumb">
-                    <li className="breadcrumb-item">
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li className="breadcrumb-item active" aria-current="page">
-                      {currentCategory ? currentCategory.name : 'Shop'}
-                    </li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
+          <div className="text-center">
+            <h1 style={{ color: '#fff', marginBottom: '16px', fontSize: 'clamp(32px, 5vw, 48px)' }}>
+              {currentCategory ? currentCategory.name : 'All Products'}
+            </h1>
+            <nav className="breadcrumb-wrap" aria-label="breadcrumb">
+              <ol className="breadcrumb justify-content-center" style={{ background: 'none' }}>
+                <li className="breadcrumb-item">
+                  <Link to="/" style={{ color: 'rgba(255,255,255,0.8)' }}>Home</Link>
+                </li>
+                <li className="breadcrumb-item active" style={{ color: '#FFEB8A' }}>
+                  {currentCategory ? currentCategory.name : 'Shop'}
+                </li>
+              </ol>
+            </nav>
           </div>
+        </div>
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
+          <svg viewBox="0 0 1440 60" fill="#fff" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '30px' }}>
+            <path d="M0,32 C360,60 1080,0 1440,32 L1440,60 L0,60 Z"/>
+          </svg>
         </div>
       </div>
 

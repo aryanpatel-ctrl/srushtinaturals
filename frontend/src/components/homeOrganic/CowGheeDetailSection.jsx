@@ -43,17 +43,17 @@ function CowGheeDetailSection() {
                         <div className="swiper-wrapper">
                           <div className="swiper-slide" data-size="200 GM">
                             <a href={gheeImages[0]} target="_blank" rel="noopener noreferrer" className="item" data-pswp-width="490px" data-pswp-height="548px">
-                              <img loading="lazy" width="490" height="548" className="tf-image-zoom" data-zoom={gheeImages[0]} src={gheeImages[0]} alt="Pure Gir Cow Ghee" />
+                              <img loading="lazy" className="tf-image-zoom" data-zoom={gheeImages[0]} src={gheeImages[0]} alt="Pure Gir Cow Ghee" />
                             </a>
                           </div>
                           <div className="swiper-slide" data-size="500 GM">
                             <a href={gheeImages[1]} target="_blank" rel="noopener noreferrer" className="item" data-pswp-width="490px" data-pswp-height="548px">
-                              <img loading="lazy" width="490" height="548" className="tf-image-zoom" data-zoom={gheeImages[1]} src={gheeImages[1]} alt="Pure Gir Cow Ghee" />
+                              <img loading="lazy" className="tf-image-zoom" data-zoom={gheeImages[1]} src={gheeImages[1]} alt="Pure Gir Cow Ghee" />
                             </a>
                           </div>
                           <div className="swiper-slide" data-size="1 KG">
                             <a href={gheeImages[2]} target="_blank" rel="noopener noreferrer" className="item" data-pswp-width="490px" data-pswp-height="548px">
-                              <img loading="lazy" width="490" height="548" className="tf-image-zoom" data-zoom={gheeImages[2]} src={gheeImages[2]} alt="Pure Gir Cow Ghee" />
+                              <img loading="lazy" className="tf-image-zoom" data-zoom={gheeImages[2]} src={gheeImages[2]} alt="Pure Gir Cow Ghee" />
                             </a>
                           </div>
                         </div>
@@ -64,17 +64,17 @@ function CowGheeDetailSection() {
                       <div className="swiper-wrapper stagger-wrap">
                         <div className="swiper-slide stagger-item">
                           <div className="item radius-8">
-                            <img loading="lazy" width="82" height="110" src={gheeImages[0]} alt="Pure Gir Cow Ghee" />
+                            <img loading="lazy" src={gheeImages[0]} alt="Pure Gir Cow Ghee" />
                           </div>
                         </div>
                         <div className="swiper-slide stagger-item">
                           <div className="item radius-8">
-                            <img loading="lazy" width="82" height="110" src={gheeImages[1]} alt="Pure Gir Cow Ghee" />
+                            <img loading="lazy" src={gheeImages[1]} alt="Pure Gir Cow Ghee" />
                           </div>
                         </div>
                         <div className="swiper-slide stagger-item">
                           <div className="item radius-8">
-                            <img loading="lazy" width="82" height="110" src={gheeImages[2]} alt="Pure Gir Cow Ghee" />
+                            <img loading="lazy" src={gheeImages[2]} alt="Pure Gir Cow Ghee" />
                           </div>
                         </div>
                       </div>

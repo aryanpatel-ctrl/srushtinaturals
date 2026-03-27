@@ -4,7 +4,7 @@ import { useCart } from '../context/CartContext';
 import { formatPriceSimple } from '../utils/formatPrice';
 
 function WishlistPage() {
-  const { wishlist, removeFromWishlist, clearWishlist } = useWishlist();
+  const { wishlistItems: wishlist, removeFromWishlist, clearWishlist } = useWishlist();
   const { addToCart } = useCart();
 
   const handleAddToCart = (product) => {
@@ -111,26 +111,32 @@ function WishlistPage() {
                 {wishlist.map((product, index) => (
                   <div className="col-6 col-md-4 col-lg-3 mb-4" key={product.id}>
                     <div
-                      className="wow fadeInUp animate-on-scroll card-hover-lift"
-                      data-animate
+                      className="wishlist-card"
                       style={{
-                        background: '#F8F4EC',
+                        background: '#fff',
                         borderRadius: '16px',
                         overflow: 'hidden',
                         height: '100%',
-                        transitionDelay: `${index * 0.05}s`
+                        boxShadow: '0 4px 20px rgba(16, 60, 41, 0.08)',
+                        transition: 'all 0.3s ease'
                       }}
                     >
                       {/* Image */}
-                      <div style={{ position: 'relative' }}>
+                      <div style={{
+                        position: 'relative',
+                        aspectRatio: '1',
+                        background: '#F8F4EC',
+                        overflow: 'hidden'
+                      }}>
                         <Link to={`/product/${product.slug}`}>
                           <img
                             src={product.img}
                             alt={product.name}
                             style={{
                               width: '100%',
-                              height: '200px',
-                              objectFit: 'cover'
+                              height: '100%',
+                              objectFit: 'cover',
+                              transition: 'transform 0.4s ease'
                             }}
                           />
                         </Link>
@@ -142,8 +148,8 @@ function WishlistPage() {
                             position: 'absolute',
                             top: '12px',
                             right: '12px',
-                            width: '32px',
-                            height: '32px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '50%',
                             background: '#fff',
                             border: 'none',
@@ -151,7 +157,7 @@ function WishlistPage() {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                            boxShadow: '0 2px 10px rgba(0,0,0,0.15)',
                             transition: 'all 0.3s ease'
                           }}
                           title="Remove from Wishlist"
@@ -170,8 +176,8 @@ function WishlistPage() {
                             left: '12px',
                             background: '#DC4646',
                             color: '#fff',
-                            padding: '4px 10px',
-                            borderRadius: '4px',
+                            padding: '4px 12px',
+                            borderRadius: '20px',
                             fontSize: '12px',
                             fontWeight: '600'
                           }}>
@@ -181,31 +187,31 @@ function WishlistPage() {
                       </div>
 
                       {/* Content */}
-                      <div style={{ padding: '16px' }}>
+                      <div style={{ padding: '20px' }}>
                         <Link
                           to={`/product/${product.slug}`}
                           style={{
                             color: '#103C29',
                             fontWeight: '600',
-                            fontSize: '15px',
+                            fontSize: '16px',
                             textDecoration: 'none',
                             display: 'block',
-                            marginBottom: '8px',
-                            lineHeight: 1.3
+                            marginBottom: '10px',
+                            lineHeight: 1.4
                           }}
                         >
                           {product.name}
                         </Link>
 
-                        <div style={{ marginBottom: '12px' }}>
-                          <span style={{ color: '#103C29', fontWeight: '600', fontSize: '16px' }}>
+                        <div style={{ marginBottom: '16px' }}>
+                          <span style={{ color: '#103C29', fontWeight: '700', fontSize: '18px' }}>
                             {formatPriceSimple(product.price)}
                           </span>
                           {product.oldPrice && (
                             <span style={{
                               color: '#999',
                               textDecoration: 'line-through',
-                              marginLeft: '8px',
+                              marginLeft: '10px',
                               fontSize: '14px'
                             }}>
                               {formatPriceSimple(product.oldPrice)}
@@ -215,8 +221,8 @@ function WishlistPage() {
 
                         <button
                           onClick={() => handleAddToCart(product)}
-                          className="tf-btn animate-btn small"
-                          style={{ width: '100%' }}
+                          className="tf-btn animate-btn"
+                          style={{ width: '100%', padding: '12px 20px' }}
                         >
                           Add to Cart
                         </button>
@@ -238,6 +244,22 @@ function WishlistPage() {
           </Link>
         </div>
       </section>
+
+      <style>{`
+        .wishlist-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 15px 40px rgba(16, 60, 41, 0.15) !important;
+        }
+        .wishlist-card:hover img {
+          transform: scale(1.05);
+        }
+        .wishlist-card button[title="Remove from Wishlist"]:hover {
+          background: #DC4646 !important;
+        }
+        .wishlist-card button[title="Remove from Wishlist"]:hover svg {
+          stroke: #fff;
+        }
+      `}</style>
     </>
   );
 }

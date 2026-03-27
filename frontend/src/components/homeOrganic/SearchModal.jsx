@@ -100,8 +100,8 @@ function SearchModal({ onQuickView }) {
                       <div className="card-product">
                         <div className="card-product_wrapper square">
                           <Link to={`/product/${product.slug}`} className="product-img" data-bs-dismiss="modal">
-                            <img className="img-product" loading="lazy" width={330} height={330} src={product.img} alt={product.name} />
-                            <img className="img-hover" loading="lazy" width={330} height={330} src={product.hoverImg || product.img} alt={product.name} />
+                            <img className="img-product" loading="lazy" src={product.img} alt={product.name} />
+                            <img className="img-hover" loading="lazy" src={product.hoverImg || product.img} alt={product.name} />
                           </Link>
                           <ul className="product-action_list">
                             <li className="wishlist">

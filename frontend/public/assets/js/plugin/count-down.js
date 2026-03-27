@@ -9,6 +9,13 @@ Util.setAttributes = function (el, attrs) {
 (function () {
     var CountDown = function (element) {
         this.element = element;
+
+        // Prevent double initialization
+        if (this.element.getAttribute("data-countdown-initialized") === "true") {
+            return;
+        }
+        this.element.setAttribute("data-countdown-initialized", "true");
+
         this.labels = this.element.getAttribute("data-labels") ? this.element.getAttribute("data-labels").split(",") : [];
         this.intervalId;
         // set visible labels

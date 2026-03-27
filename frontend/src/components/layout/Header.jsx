@@ -114,10 +114,10 @@ function Header({ onQuickView }) {
                               {megaMenuProducts.map(product => (
                                 <div className="swiper-slide" key={product.id}>
                                   <div className="card-product">
-                                    <div className="card-product_wrapper">
+                                    <div className="card-product_wrapper square">
                                       <Link to={`/product/${product.slug}`} className="product-img">
-                                        <img className="img-product" loading="lazy" width={330} height={440} src={product.img} alt={product.name} />
-                                        <img className="img-hover" loading="lazy" width={330} height={440} src={product.hoverImg || product.img} alt={product.name} />
+                                        <img className="img-product" loading="lazy" src={product.img} alt={product.name} />
+                                        <img className="img-hover" loading="lazy" src={product.hoverImg || product.img} alt={product.name} />
                                       </Link>
                                       <ul className="product-action_list">
                                         <li className="wishlist">

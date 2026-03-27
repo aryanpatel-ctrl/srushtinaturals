@@ -79,16 +79,12 @@ function ProductCard({ product, onQuickView, showRating = false, variant = 'defa
           <img
             className="img-product"
             loading="lazy"
-            width={330}
-            height={330}
             src={product.img}
             alt={product.name}
           />
           <img
             className="img-hover"
             loading="lazy"
-            width={330}
-            height={330}
             src={product.hoverImg || product.img}
             alt={product.name}
           />

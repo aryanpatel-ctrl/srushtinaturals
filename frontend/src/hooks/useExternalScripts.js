@@ -52,6 +52,11 @@ export function reinitializePlugins() {
       } catch (e) {}
     }
 
+    // Reinitialize all jQuery plugins from main.js
+    if (typeof window.initAllPlugins === 'function') {
+      window.initAllPlugins();
+    }
+
     // Trigger window load to let carousel.js initialize new Swipers
     window.dispatchEvent(new Event("load"));
 

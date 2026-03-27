@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 /**
  * AnimationInitializer - Optimized scroll-triggered animations
@@ -7,6 +8,7 @@ import { useEffect, useRef } from 'react';
 function AnimationInitializer() {
   const observerRef = useRef(null);
   const progressCleanupRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     // Single unified observer for all animation types
@@ -100,16 +102,8 @@ function AnimationInitializer() {
       progressCleanupRef.current = initScrollProgress();
     }, 150);
 
-    // Handle route changes
-    const handleRouteChange = () => {
-      setTimeout(initAnimations, 250);
-    };
-
-    window.addEventListener('popstate', handleRouteChange);
-
     return () => {
       clearTimeout(timeout);
-      window.removeEventListener('popstate', handleRouteChange);
       if (observerRef.current) {
         observerRef.current.disconnect();
       }
@@ -117,7 +111,7 @@ function AnimationInitializer() {
         progressCleanupRef.current();
       }
     };
-  }, []);
+  }, [location.pathname]); // Re-run on route change
 
   return null;
 }

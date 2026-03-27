@@ -15,7 +15,7 @@
         <div className="tf-product-info-inner tf-product-info-list mb-0">
           <div className="tf-product-mini-view">
             <a href="product-detail.html" className="prd-image">
-              <img width={80} height={107} src="/assets/images/product/product-2.jpg" alt="Image Product" />
+              <img src="/assets/images/product/product-2.jpg" alt="Image Product" />
             </a>
             <div className="prd-content">
               <a href="product-detail.html" className="prd-name fw-medium link-underline">

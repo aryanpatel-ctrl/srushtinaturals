@@ -402,11 +402,14 @@ function ProductDetailPage() {
           border-radius: 16px;
           overflow: hidden;
           margin-bottom: 16px;
+          aspect-ratio: 1;
         }
         .main-product-image {
           width: 100%;
-          height: auto;
+          height: 100%;
           display: block;
+          object-fit: cover;
+          object-position: center;
           transition: transform 0.3s ease;
         }
         .main-image-wrapper:hover .main-product-image {
