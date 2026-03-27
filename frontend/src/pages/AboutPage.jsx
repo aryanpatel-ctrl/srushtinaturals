@@ -4,22 +4,28 @@ import { Bird, Leaf, Plant, OrganicBlob, CowSilhouette, SunDecor, NatureDecorati
 function AboutPage() {
   const teamMembers = [
     {
-      name: 'Rajesh Patel',
-      role: 'Founder & Farmer',
+      name: 'Sumitra Dinesh Patel',
+      role: 'Managing Director',
       image: null,
-      bio: 'Third-generation farmer with a passion for organic agriculture.'
+      bio: 'Leads the strategic vision and overall operations, ensuring sustainable growth and absolute commitment to our organic values.'
     },
     {
-      name: 'Meena Patel',
-      role: 'Co-Founder',
+      name: 'Vinod Patel',
+      role: 'CEO',
       image: null,
-      bio: 'Ensures traditional recipes and methods are preserved in every product.'
+      bio: 'Drives corporate strategy and executive leadership to continually elevate our premium organic offerings across the country.'
     },
     {
-      name: 'Amit Shah',
-      role: 'Farm Manager',
+      name: 'Nandlal Patel',
+      role: 'CEO',
       image: null,
-      bio: 'Oversees daily operations and maintains our organic certifications.'
+      bio: 'Spearheads operational initiatives and growth, ensuring our foundational farming traditions and quality are always upheld.'
+    },
+    {
+      name: 'Shailesh Patel',
+      role: 'Director',
+      image: null,
+      bio: 'Guides the strategic direction and expansion of Srushti Naturals, focusing on sustainable and community-driven success.'
     }
   ];
 
@@ -36,8 +42,8 @@ function AboutPage() {
     {
       icon: (
         <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
-          <circle cx="24" cy="24" r="20" stroke="#103C29" strokeWidth="2" fill="#F8F4EC"/>
-          <path d="M24 14V24L30 30" stroke="#103C29" strokeWidth="2" strokeLinecap="round"/>
+          <circle cx="24" cy="24" r="20" stroke="#103C29" strokeWidth="2" fill="#F8F4EC" />
+          <path d="M24 14V24L30 30" stroke="#103C29" strokeWidth="2" strokeLinecap="round" />
         </svg>
       ),
       title: 'Traditional Methods',
@@ -46,8 +52,8 @@ function AboutPage() {
     {
       icon: (
         <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
-          <path d="M24 4L4 14V34L24 44L44 34V14L24 4Z" stroke="#103C29" strokeWidth="2" fill="#F8F4EC"/>
-          <path d="M16 24L22 30L32 18" stroke="#103C29" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M24 4L4 14V34L24 44L44 34V14L24 4Z" stroke="#103C29" strokeWidth="2" fill="#F8F4EC" />
+          <path d="M16 24L22 30L32 18" stroke="#103C29" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ),
       title: '100% Organic',
@@ -56,10 +62,10 @@ function AboutPage() {
     {
       icon: (
         <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
-          <circle cx="24" cy="20" r="8" stroke="#103C29" strokeWidth="2" fill="#F8F4EC"/>
-          <path d="M12 42C12 35.4 17.4 30 24 30C30.6 30 36 35.4 36 42" stroke="#103C29" strokeWidth="2" strokeLinecap="round"/>
-          <circle cx="38" cy="16" r="5" stroke="#103C29" strokeWidth="2" fill="#F8F4EC"/>
-          <circle cx="10" cy="16" r="5" stroke="#103C29" strokeWidth="2" fill="#F8F4EC"/>
+          <circle cx="24" cy="20" r="8" stroke="#103C29" strokeWidth="2" fill="#F8F4EC" />
+          <path d="M12 42C12 35.4 17.4 30 24 30C30.6 30 36 35.4 36 42" stroke="#103C29" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="38" cy="16" r="5" stroke="#103C29" strokeWidth="2" fill="#F8F4EC" />
+          <circle cx="10" cy="16" r="5" stroke="#103C29" strokeWidth="2" fill="#F8F4EC" />
         </svg>
       ),
       title: 'Farm to Family',
@@ -68,8 +74,8 @@ function AboutPage() {
     {
       icon: (
         <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
-          <path d="M24 44C24 44 40 32 40 20C40 11.2 32.8 4 24 4C15.2 4 8 11.2 8 20C8 32 24 44 24 44Z" stroke="#103C29" strokeWidth="2" fill="#F8F4EC"/>
-          <circle cx="24" cy="20" r="6" stroke="#103C29" strokeWidth="2"/>
+          <path d="M24 44C24 44 40 32 40 20C40 11.2 32.8 4 24 4C15.2 4 8 11.2 8 20C8 32 24 44 24 44Z" stroke="#103C29" strokeWidth="2" fill="#F8F4EC" />
+          <circle cx="24" cy="20" r="6" stroke="#103C29" strokeWidth="2" />
         </svg>
       ),
       title: 'Sustainable Farming',
@@ -99,7 +105,7 @@ function AboutPage() {
                 marginBottom: '24px',
                 lineHeight: 1.2
               }}>
-                From Our Farm <br/>
+                From Our Farm <br />
                 <span style={{ color: '#FFEB8A', fontStyle: 'italic' }}>to Your Home</span>
               </h1>
               <p style={{
@@ -118,7 +124,7 @@ function AboutPage() {
         {/* Decorative wave */}
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
           <svg viewBox="0 0 1440 120" fill="#F8F4EC" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '60px' }}>
-            <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z"/>
+            <path d="M0,64 C480,150 960,-20 1440,64 L1440,120 L0,120 Z" />
           </svg>
         </div>
       </section>
@@ -141,9 +147,9 @@ function AboutPage() {
               }}>
                 <div style={{ textAlign: 'center', padding: '40px' }}>
                   <svg width="80" height="80" viewBox="0 0 24 24" fill="none" style={{ marginBottom: '20px', opacity: 0.8 }}>
-                    <path d="M12 3L4 9V21H20V9L12 3Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                    <path d="M9 21V15H15V21" stroke="currentColor" strokeWidth="1.5"/>
-                    <circle cx="12" cy="11" r="2" stroke="currentColor" strokeWidth="1.5"/>
+                    <path d="M12 3L4 9V21H20V9L12 3Z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                    <path d="M9 21V15H15V21" stroke="currentColor" strokeWidth="1.5" />
+                    <circle cx="12" cy="11" r="2" stroke="currentColor" strokeWidth="1.5" />
                   </svg>
                   <p style={{ fontSize: '18px', opacity: 0.9 }}>Farm Story Image</p>
                   <p style={{ fontSize: '14px', opacity: 0.7 }}>Replace with your farm photo</p>
@@ -308,6 +314,65 @@ function AboutPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <section style={{ padding: '80px 0', backgroundColor: '#F8F4EC' }}>
+        <div className="container">
+          <div className="text-center mb-5 wow fadeInUp animate-on-scroll" data-animate>
+            <p className="section-tagline">Visit Us</p>
+            <h2 className="section-title nature-style">Our <span>Location</span></h2>
+            <p style={{ color: '#555', maxWidth: '600px', margin: '0 auto' }}>
+              Want to see where the magic happens? Come visit our farm and experience nature's lap firsthand.
+            </p>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="wow fadeInUp animate-on-scroll" data-animate style={{
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+              }}>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.895653295097!2d72.4258048!3d23.2468839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c25078dba49d1%3A0x4afa16f8582b987f!2sChaitanya%20Farm%20The%20Natures%20Lap%20(Svakara)!5e0!3m2!1sen!2sin!4v1774612113755!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="450" 
+                  style={{ border: 0 }} 
+                  allowFullScreen="" 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Srushti Naturals Farm Location"
+                ></iframe>
+              </div>
+              <div className="text-center mt-4">
+                <a 
+                  href="https://maps.app.goo.gl/uX3L3bK8b8qA1i1x7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="tf-btn"
+                  style={{
+                    background: '#103C29',
+                    color: '#fff',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    padding: '12px 24px',
+                    borderRadius: '30px',
+                    textDecoration: 'none',
+                    fontWeight: '600',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C16 16.8 19 12.8 19 9C19 5.13401 15.866 2 12 2C8.13401 2 5 5.13401 5 9C5 12.8 8 16.8 12 21Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  Open in Google Maps
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

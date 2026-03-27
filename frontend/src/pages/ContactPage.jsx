@@ -39,7 +39,7 @@ function ContactPage() {
         </svg>
       ),
       title: 'Visit Us',
-      details: ['Srushti Naturals Farm', 'Village Vadod, Taluka Mangrol', 'District Junagadh, Gujarat 362225']
+      details: ['Chaitanya Farm, The Natures Lap', '(Svakara)', 'Gujarat, India']
     },
     {
       icon: (
@@ -299,34 +299,34 @@ function ContactPage() {
 
             <div className="col-lg-6">
               <div className="wow fadeInUp animate-on-scroll" data-animate style={{ height: '100%', minHeight: '400px' }}>
-                {/* Map Placeholder */}
                 <div style={{
-                  background: '#F8F4EC',
                   borderRadius: '16px',
+                  overflow: 'hidden',
+                  boxShadow: '0 4px 20px rgba(16, 60, 41, 0.08)',
                   height: '100%',
                   display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexDirection: 'column',
-                  padding: '40px'
+                  flexDirection: 'column'
                 }}>
-                  <svg width="80" height="80" viewBox="0 0 24 24" fill="none" style={{ marginBottom: '20px', color: '#70857A' }}>
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" strokeWidth="1.5"/>
-                    <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="1.5"/>
-                  </svg>
-                  <h4 style={{ color: '#103C29', marginBottom: '8px' }}>Our Farm Location</h4>
-                  <p style={{ color: '#666', textAlign: 'center', marginBottom: '20px' }}>
-                    Village Vadod, Taluka Mangrol<br/>
-                    District Junagadh, Gujarat 362225
-                  </p>
-                  <a
-                    href="https://maps.google.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="tf-btn btn-stroke small"
-                  >
-                    Open in Google Maps
-                  </a>
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.895653295097!2d72.4258048!3d23.2468839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c25078dba49d1%3A0x4afa16f8582b987f!2sChaitanya%20Farm%20The%20Natures%20Lap%20(Svakara)!5e0!3m2!1sen!2sin!4v1774612113755!5m2!1sen!2sin" 
+                    width="100%" 
+                    style={{ flex: 1, border: 0, minHeight: '350px' }} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Srushti Naturals Farm Location"
+                  ></iframe>
+                  <div style={{ padding: '20px', background: '#F8F4EC', textAlign: 'center' }}>
+                    <a
+                      href="https://www.google.com/maps/place/Chaitanya+Farm+The+Natures+Lap+(Svakara)/@23.2468839,72.4258048,16z/data=!4m6!3m5!1s0x395c25078dba49d1:0x4afa16f8582b987f!8m2!3d23.2468839!4d72.4279935!16s%2Fg%2F11b6y8m56h?entry=ttu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="tf-btn btn-stroke small"
+                      style={{ borderColor: '#103C29', color: '#103C29' }}
+                    >
+                      Open in Google Maps
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

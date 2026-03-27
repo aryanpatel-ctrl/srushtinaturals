@@ -24,7 +24,7 @@ function BannerImageSection() {
         <div className="tf-grid-layout gap-10">
           <div className="banner-image-text type-abs style-13 wow fadeInUp animate-on-scroll card-hover-lift" data-animate data-wow-delay="0.1s">
             <Link to="/shop/spices" className="bn-image img-style">
-              <img loading="lazy" width="654" height="436" src="/assets/images/section/ajwain.png" alt="Ajwain" />
+              <img loading="lazy" width="654" height="436" src="/assets/images/section/ajwainn.png" alt="Ajwain" />
             </Link>
             <div className="bn-content wow fadeInUp">
               <h6 className="desc text-primary mb-0">Up to 15% off</h6>
@@ -39,7 +39,7 @@ function BannerImageSection() {
 
           <div className="banner-image-text type-abs style-13 wow fadeInUp animate-on-scroll card-hover-lift" data-animate data-wow-delay="0.2s">
             <Link to="/shop/spices" className="bn-image img-style">
-              <img loading="lazy" width="654" height="436" src="/assets/images/section/turmeric.png" alt="Turmeric" />
+              <img loading="lazy" width="654" height="436" src="/assets/images/section/turmericc.png" alt="Turmeric" />
             </Link>
             <div className="bn-content wow fadeInUp">
               <h6 className="desc text-primary mb-0">Most Loved Picks</h6>
@@ -56,7 +56,7 @@ function BannerImageSection() {
         <div className="tf-grid-layout gap-10 sm-col-2 xl-col-1 xl-wd-full">
           <div className="banner-image-text type-abs style-13 wow fadeInUp animate-on-scroll card-hover-lift" data-animate data-wow-delay="0.3s">
             <Link to="/product/fennel-seeds" className="bn-image img-style">
-              <img loading="lazy" width="654" height="436" src="/assets/images/section/fennel.png" alt="Fennel" />
+              <img loading="lazy" width="654" height="436" src="/assets/images/section/fennell.png" alt="Fennel" />
             </Link>
             <div className="bn-content wow fadeInUp">
               <h6 className="desc text-primary mb-0">Top Organic Choices</h6>
